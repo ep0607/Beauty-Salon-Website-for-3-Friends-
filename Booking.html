@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3 Friends Beauty Salon</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Font Custom and Font Awesome -->
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<style type="text/css">
+		body{
+		background-color:rgba(200,170,00,0.6);
+	}
+
+	</style>
+</head>
+<body>
+	<div style="width:100%">
+	<!-- navbar -->
+	<<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid slide-showr">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand"></a>
+			</div>
+			<div class="navbar-collapse collapse navbar-right" id="mainNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="service & pricing.html">Service & Pricing</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="review.html">Review</a></li>
+					<li><a href="Booking.html">Booking</a></li>
+					<li><a href="admin.html"><i class="fab fa-adn"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav><br><br>
+	<!-- Contact -->
+	<div class="container-fluid slide-show">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="page-header">Booking <small>our beauty salon</small></h1>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Contact Details -->
+	<div class="container-fluid slide-show">
+		<div class="row">
+			<div class="col-md-8">
+				<img src="map.jpg" width="100%">
+			</div>
+				<!--
+				<div id="map" style="width:800px;height:400px;background:yellow;"></div>
+				 <script>
+				function myMap() {
+				var mapOptions = {
+				    center: new google.maps.LatLng(18.940187, 96.439941),
+				    zoom: 10,
+				    mapTypeId: google.maps.MapTypeId.HYBRID
+				}
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+				}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+			</div>
+			-->
+			<div class="col-md-4">
+				<h3>Contact Details</h3>
+				<address>No.(1) Street,Taungoo</address>
+				<p><i class="fas fa-phone-volume"></i>&nbsp 09-969712981</p>
+				<p><a href="#"><i class="fas fa-envelope"></i> 3friends123@gmail.com</a></p>
+				<p><i class="far fa-clock"></i> Monday - Friday: 9:00 AM to 5:00 PM</p>
+				<ul class="list-inline">
+					<li><a href="#"><i class="fab fa-facebook-square" style="font-size: 2.5em;"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram" style="font-size: 2.5em;""></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-square" style="font-size: 2.5em;""></i></a></li>
+					<li><a href="#"><i class="fab fa-google-plus-square" style="font-size: 2.5em;""></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Contact Form -->
+	<div class="container-fluid slide-show">
+		<div class="row">
+			<div class="col-md-8">
+				<script type="text/javascript">
+					var text1=document.getElementById('phoneNum');
+						EventUtil.addhandler(text1,"keypress",Function(event){
+						event=EventUtil.getevent(event);
+						var charCode=EventUtil.getCharCode(event);
+						var text=String.fromCharCode(charCode);
+						var pattern=/\d/;
+						if(!pattern.test(text) && charCode>9 && !event.ctrlkey)
+							EventUtil.preventdefault(event);
+		});
+	</script>
+				<h1>Please book your appointment before 2 days.</h1>
+				<form action="" class="form-group sendMessageForm">
+					<label for="Time" class="control-label">
+						What dates and times work best for you :
+					</label>
+					<input type="text" placeholder="Enter appointment date" id="fullName" class="form-control" required>
+					<label for="fullName" class="control-label">
+						Full Name :
+					</label>
+					<input type="text" placeholder="Enter Full Name" id="fullName" class="form-control" required>
+
+					<label for="phoneNum" class="control-label">
+						Phone Number :
+					</label>
+					<input type="tel" placeholder="Enter Phone Number" id="phoneNum" class="form-control" pattern="\d+" required>
+					<label for="stylist" class="control-label">
+						Do you already work with one of our specialist:
+					</label><br><br>
+					<select class="form-control">
+					<option>No</option>
+					<option>Omega Mee Mee(Hair Stylist)</option>
+					<option>Yoko(Hair Stylist)</option>
+					<option>Adam(Hair Stylist)</option>
+					<option>Tay Zar Ko Ko(Stylist)</option>
+					<option>Zu Ki Ko Han(Stylist)</option>
+					<option>Wai Min Kyaw Oo(Stylist)</option>
+					<option>Thiri Swe(Stylist)</option>
+					<option>Ki Ki(Stylist)</option>
+					<option>Julia(Colorist)</option>
+					<option>May Oo(Make-up Artist)</option>
+					<option>Htet Htet Wai(Make-up Artist)</option>
+					<option>Sofia(Make-up Artist)</option>
+					</select><br>
+					<label for="stylist" class="control-label">
+						Service Type :
+					</label>
+					<label for="stylist" class="control-label">
+						<input type="checkbox" id="cut">Wash & Cut&nbsp;
+						<input type="checkbox" id="colour">Hair Colour&nbsp;
+						<input type="checkbox" id="facial">Facial Waxing&nbsp;
+						<input type="checkbox" id="body">Body Waxing&nbsp;
+						<input type="checkbox" id="hand">Hands and Feet&nbsp;
+						<input type="checkbox" id="make">Make-up Application&nbsp;
+					</label>
+					<label for="emailAddress" class="control-label">
+						Email Address :
+					</label>
+					<input type="email" placeholder="Enter Email Address" id="emailAddress" class="form-control" required>
+					<label for="message" class="control-label">Message :</label>
+					<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Please leave a Message">
+						
+					</textarea>
+
+					<input type="submit" value="Book Appointment" class="btn btn-primary" onclick="alert('Your appointment is successful! Thanks for booking!');">
+					<input type="reset" value="Cancel" class="btn btn-primary" onclick="alert('Your appointment is Fail! Please try again!'');";>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery Link -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap javaScript -->
+	<script src="js/bootstrap.min.js"></script>
+</div>
+</body>
