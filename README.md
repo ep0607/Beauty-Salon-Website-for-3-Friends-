@@ -1,4 +1,4 @@
-# 💄 Modern Beauty Salon Website
+# 💄 Three Friend Beauty Salon Website
 
 A fully responsive, modern beauty salon website built as a second-year web development project. This project showcases elegant design, smooth animations, and professional UI/UX using front-end technologies like HTML, CSS, Bootstrap, and JavaScript.
 
